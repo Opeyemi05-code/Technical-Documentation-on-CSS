@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Document Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <main id="main-doc">
+        <nav id="navbar">
+          <ul id="ul">
+          <p id="Header">CSS Documentation</p>
+            <li><a class="nav-link" href="#CSS_Introduction">CSS-Introduction</a></li> <hr id="nav-hr">
+            <li><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li> <hr id="nav-hr">
+            <li><a class="nav-link" href="#Comments_in_CSS">Comments in CSS</a></li> <hr id="nav-hr">
+            <li><a class="nav-link" href="#Combinators_&_Selectors">Combinators & Selectors</a></li>  <hr id="nav-hr">
+            <li><a class="nav-link" href="#CSS_Font">CSS Font</a></li> <hr id="nav-hr">
+            <li><a class="nav-link" href="#Basic_Font_Properties">Basic Font Properties</a></li> <hr id="nav-hr">
+            <li><a class="nav-link" href="#Text_Formatting">Text Formatting</a></li> <hr id="nav-hr">
+            <li><a class="nav-link" href="#CSS_Text_Decoration_Syntax">CSS Text Decoration Syntax</a></li> <hr id="nav-hr">
+            <li><a class="nav-link" href="#CSS_Text_Align">CSS Text Align</a></li> <hr id="nav-hr">
+            <li><a class="nav-link" href="#CSS_Background">CSS Background</a></li> <hr id="nav-hr">
+            <li><a class="nav-link" href="#CSS_Gradients">CSS Gradients</a></li> <hr id="nav-hr"> 
+            <li><a class="nav-link" href="#CSS_Border">CSS Border</a></li> 
+          </ul>
+        </nav>
+
+      <div class="container">
+        <section class="main-section">
+            <h1 id="CSS_Introduction"> CSS Introduction</h1>
+                <article>
+                  <p>CSS (Cascading Style Sheets) is a styling language used to add style to a webpage.
+
+                   HTML provides structure and adds content to a webpage, while CSS enhances the visual presentation of that 
+                   content through various styles. 
+                 </p>
+                 <h2 id="CSS_Syntax">CSS Syntax</h2>
+                 <p>Here's the syntax to style an element on a webpage:</p>
+                 <div class="code">
+                   <code>
+                     selector { <br>
+                      <div class="props">
+                       property1: value; <br>
+                       property2: value; <br></div>.
+                     }
+                   </code>
+                 </div> 
+                  The basic syntax of CSS includes 3 main parts: <br>
+                  <ul id = "special_ul">
+                    <li><div class="selector">selector</div> - specifies the HTML element that we want to apply the styles
+                    </li> <br>
+                    <li><div class="prop1">property1</div> / <div class="prop1">property2</div> -  specifies the attribute of 
+                      HTML elements that we want to change (color, background, and so on)
+                    </li> <br>
+                    <li><div class="value">value</div> - specifies the new value you want to assign to the property (color of the
+                       text to red, background to gray, and so on)
+                    </li>
+                 </ul>
+                 <h2>Example CSS Syntax</h2>
+                 <p>Let us see an example of CSS</p>
+                 <div class="code">
+                  <code>
+                    p { <br>
+                      <div class="props">
+                        color: red; <br>
+                        font-size: 20px; <br>
+                        backgroud-color: yellow; <br>
+                      </div>
+                    }
+                  </code>
+                 </div>
+                 <p>Here,</p>
+                  <ul id="special_ul">                     
+                   <li> <div class="prop1">p</div>- selector that selects all the &lt;p&gt; elements from the document</li> <br>
+                   <li> <div class="prop1"> color: red;</div> - changes the text color of <p> contents to red </li> <br>
+                   <li><div class="prop1"> font-size: 20px;</div> - changes the font size of <p> contents to 20px</li> <br>
+                   <li><div class="prop1"> background-color: yellow;</div> - sets the background of the <p> element to <div class="prop1"> yellow</div></li>
+                  </ul>
+                  
+
+                 <h2 id="Comments_in_CSS">Comments in CSS</h2>
+                 <p>Comments are notes written along with the code that is ignored by the browser. For example,</p>
+                 <div class="code">
+                   <code>/* this is css comment */</code>
+                 </div>
+                 <p>The CSS comment starts with /* and ends with */</p>
+                </article>
+        </section> <br>
+        
+        <section class="main-section">
+          <h1 id="Combinators_&_Selectors"> Combinators & Selectors</h1>
+          <article>
+            <p>CSS selectors are used to select the HTML elements that are to be styled by CSS. For example,</p>
+            <div class="code">
+              h1 {<br>
+                <div class="props">color: red;<br></div>
+              }
+            </div>
+            <p>Here, the h1 is the selector that selects all the h1 elements of our document and changes their color to red.</p>
+            <h2>Types of Selector</h2>
+            <p>There are the following different types of selectors in CSS.</p>
+            <ul id="special_ul">
+              <li>Id selector</li> <br>
+              <li>Class selector</li> <br>
+           </ul>
+           <p>Now, let's learn about them in detail</p>
+           <hr>
+           <h2>Id Selector</h2>
+           <p>The id selector selects the HTML element with a unique identifier (id) and adds CSS to it.
+
+            The id selector is specified using the hash (<div class="prop1">#</div>) character, followed by the id of the element.
+            
+            Let's see an example,</p>
+            <div class="code">
+              <code>
+                #second-paragraph { <br>
+                  <div class="props"> color: red; <br></div>
+                }
+              </code>
+            </div>
+            <p>Here,</p>
+            <ul id="special_ul">
+              <li> <div class="prop1">#</div> - id selector</li> <br>
+              <li><div class="prop1">second-paragraph</div> - the name of the id</li> 
+            </ul> 
+            <p style="display: flex;">The id selector <div class="prop1">#second-paragraph</div> selects the second paragraph and styles the text color to <div class="prop1">red</div>.</p>
+            <div class="note">
+              <b>Note:</b> The id selector is unique and selects one unique element.
+            </div>
+            <h2>Class Selector</h2>
+            <p>The class selector selects the HTML element using the class attribute and applies CSS to it.
+
+              The class selector is specified using the period (.) character, followed by the class name.
+              
+              Let's see an example,</p>
+              <div class="code">
+                <code>
+                  .first-paragraph { <br>
+                    
+                  <div class="props">
+                    background-color: orange; <br></div>
+                  }
+                </code>
+
+          </article>
+        </section> <br>
+
+        <section class="main-section">
+          <h1 id="CSS_Font">CSS Font</h1>
+          <article>
+            <p>CSS font properties are used to adjust the appearance of the text in an HTML document. Using the CSS fonts properties, we can customize the font family, size, weight, style, and color of text.</p>
+            <div class="code">
+              <code>body {
+                <div class="props">
+                font-family: Helvetica;<br>
+                font-size: 16px; <br></div> 
+               }
+              </code>
+            </div>
+            <p>Here,</p>
+            <ul id="special_ul">
+              <li><div class="prop1"> font-family: Helvetica</div> - sets the font family of text to <div class="prop1">Helvetica</div> within the body</li> <br>
+              <li><div class="prop1">font-size: 16px</div> - sets the font size of the text to <div class="prop1">16px</div> within the body</li>
+            </ul>
+            <h2 id="Basic_Font_Properties">Basic Font properties</h2>
+            <p>In CSS, we have the following seven important font properties that are used to change different attributes of the text.</p>
+            <ul id="special_ul">
+              <li><div class="prop1">font-family</div> : defines the font applied to the text</li> <br>
+              <li><div class="prop1">font-size</div> : sets the size of the font</li> <br>
+              <li><div class="prop1">font-weight</div> : sets the size of the font</li> <br>
+              <li><div class="prop1">font-style</div> : sets the font to italic or oblique</li> <br>
+              <li><div class="prop1">font-variant</div> : changes the font to small-caps</li> <br>
+              <li><div class="prop1">font-stretch</div> :  expands or narrows the text</li> <br>
+              <li><div class="prop1">line-height</div> : sets the distance between lines of the text</li>
+            </ul>
+            <p>We will learn about each of them in detail.</p> 
+            <hr>
+            <h2>CSS Font Family</h2>
+            <p>CSS font-family property is used to set the font face of the text on the webpage. For example, </p>
+            <div class="code">
+               <code>
+                 h1 { <br>
+                 <div class="props">
+                    font-family: Courier, monospace; <br>
+                  } <br></div>
+                </code>
+            </div>
+           <p>In the above example, we have set the font family of the h1 element to the Courier, monospace. The browser tries to render the text of h1 in Courier font, and if not available, monospace is rendered.</p>
+           <div class="note">
+            <b>Note:</b> It is recommended to list the family name in quotation marks when it consists of multiple words. For example, "Times New Roman".
+           </div>
+           <h2>CSS Font size</h2>
+           <p>CSS font-size property sets the size or height of the text. The values of font-size can be expressed by keywords, length units (px, em, rem, etc), or percentages. For example,</p>
+           <div class="code">
+            <code>
+              h1 {<div class="props">
+                /*sets the font size of h1 element to 36px */ <br>
+                font-size: 42px; <br></div>
+              } <br>
+              p {
+                <div class="props">
+                /* sets the font size to p element to 24px */ <br>
+                font-size: 24px; <br></div>
+              } <br>
+            </code>
+           </div>
+           <h2>CSS Font Style</h2>
+           <p>CSS font-style property is used to style a font either with a normal, italic, or oblique face. For example,</p>
+           <div class="code">
+            <code>
+              h1.normal { <br>
+                <div class="props">
+                font-style: normal; <br></div>
+              } <br>
+              h1.italic { <br> <div class="props">
+                font-style: italic; <br></div>
+              }
+            </code>
+           </div>
+           <p>The possible values for CSS font-style are as follows:</p>
+           <ul id="special_ul">
+            <li><div class="prop1"> normal</div> : text is shown normally</li> <br>
+            <li><div class="prop1">italic</div> : text is shown in italics</li>
+           </ul>
+           
+          </article>
+        </section> <br>
+
+        <section class="main-section">
+          <h1 id="Text_Formatting">Text Formatting</h1>
+          <article>
+            <h2>CSS Text Decoration</h2>
+            <p id="spec">CSS <div class="prop1"> text-decoration</div> property is used to decorate the appearance of text using various lines. For example,</p>
+            <div class="code">
+              <code>
+                span { <br>
+                  <div class="props">
+                    text-decoration: underline; <br>
+                  </div>
+                }
+              </code>
+            </div>
+            <h2 id="CSS_Text_Decoration_Syntax">CSS Text Decoration Syntax</h2>
+            <p>The syntax of the text-decoration property is as follows:</p>
+            <div class="code">
+              <code>
+                text-decoration: value | initial | inherit;
+              </code>
+            </div>
+            <p>The commonly used values for text-decoration are underline, overline, line-through, inherit, and none. For example,</p>
+            <div class="code">
+              <code>
+                p.underline { <br>
+                  /* draws a 1px line below the text at the baseline */ <br>
+                  text-decoration: underline; <br>
+              } <br>
+              
+              p.line-through { <br>
+                  /* draws a 1px line across the text in the middle */ <br>
+                  text-decoration: line-through; <br>
+              } <br>
+              
+              p.overline { <br>
+                  /* draws a 1px line above the text at the top */ <br>
+                  text-decoration: overline; <br> 
+              }
+              </code>
+            </div>
+            <h2 id="CSS_Text_Align">CSS Text Align</h2>
+            <p>CSS text-align property is used to horizontally align the text in an element. For example,</p>
+            <div class="code">
+              <code>
+                h1 { <br>
+                  text-align: center; <br>
+                } 
+              </code>
+            </div>
+            <p>Here, the text-align property centers the text content horizontally within the h1 element.</p>
+            <h2>Syntax of Text-Align</h2>
+            <p>The syntax of the text-align property is as follows,</p>
+            <div class="code">
+              <code>
+                text-align: left | right | center | justify | initial | inherit;
+              </code>
+            </div>
+            <p>Here,</p>
+            <ul id="special_ul">  
+              <li>left: aligns the text to the left (default value)</li>
+              <li>right: aligns the text to the right</li>
+              <li>center: aligns the text to the center</li>
+              <li>justify: the text is justified</li>
+              <li>initial: sets the value to the default</li>
+              <li>inherits: inherits the value from the parent element</li>
+            </ul>
+
+          </article>
+        </section>
+
+        <section class="main-section">
+          <h1 id="CSS_Background">CSS Background</h1>
+          <article>
+            <p>CSS background property is used to add a color or an image to the background of an element. For example,</p>
+            <div class="code">
+              <code>
+                h1 { <br>
+                  background: orange; <br>
+              }
+              </code>
+            </div>
+            <h2>CSS background-color Property</h2>
+            <p>CSS background-color property is used to set the background color in an element. For example,</p>              
+            <div class="code">
+              <code>
+                h1 { <br>
+                  background-color: orange; <br>
+                }
+              </code>
+            </div>
+            <p>Here, the <div class="prop1"> background-color</div> property sets the background color of the <div class="prop1">h1</div> element to orange.</p>
+            <h2>CSS Background-Color Syntax</h2>
+            <p>The syntax for the background-color property is,</p>
+            <div class="code">
+              <code>
+                background-color: color-value | transparent | initial | inherit;
+              </code>
+            </div>
+            <p>Here,</p>
+            <ul id="special_ul">
+              <li>color-value: specifies the color for the background such as red, blue, or rgb(255, 0, 0), etc</li>
+              <li>transparent: sets the background to be transparent (default value)</li>
+              <li>initial: sets the property value to default</li>
+              <li>inherit: inherits the property value from its parent element</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="main-section">
+          <h1 id="CSS_Gradients">CSS Gradients</h1>
+          <article>
+            <h2>CSS Linear Gradient</h2>
+            <p>CSS gradients are the smooth transitions between two or more colors. They are used to decorate the background, borders, and other elements on a webpage.</p> <br>
+            <p>There are three types of gradients in CSS,</p>
+            <ul id="special_ul">
+              <li>Linear Gradients</li>
+              <li>Radial Gradient</li>
+              <li>Conic Gradient</li>
+            </ul>
+            <p>In this article, we will learn about the <div class="prop1">linear-gradient</div> property.</p>
+            <h2>CSS Linear Gradient</h2>
+            <p>CSS <div class="prop1">linear-gradient()</div> function creates a smooth linear transition between two or more colors. For example,</p>
+            <div class="code">
+              <code>
+                div { <br>
+                  height: 200px; <br>
+                  background: linear-gradient(orange, red); <br>
+               }
+              </code>
+            </div>
+
+            <p>Here, the <div class="prop1">linear-gradient</div> function creates a smooth vertical transition from <div class="prop1">orange</div> to <div class="prop1">red</div> color.</p>
+
+          </article>
+        </section>
+        <section class="main-section">
+          <h1 id="CSS_Border">CSS Border</h1>
+          <article>
+            <h2>CSS Borders</h2>
+            <p>CSS borders are used to add the visual border around the elements of the webpage. For example,</p>
+            <div class="code">
+              <code>
+                h1 { <br>
+                  border: 8px solid blue; <br>
+              }
+              </code>
+            </div>
+            <p>Here, the <div class="prop1">border</div> property adds a <div class="prop1">solid</div> <div class="prop1">blue</div> border of <div class="prop1">8px</div> around the <div class="prop1">h1</div> element.</p>
+            <h2>Different Border Related Properties</h2>
+            <p>We have the following commonly used border-related properties:</p>
+            <ul id="special_ul">
+              <li><div class="prop1">border-style</div>: specifies the styles of the border</li>
+              <li><div class="prop1">border-width</div>: sets the width of the border</li>
+              <li><div class="prop1">border-color</div>: sets the color of the border</li>
+              <li><div class="prop1">border</div>: shorthand property to specify <div class="prop1">border-style</div>, <div class="prop1">border-width</div>, and <div class="prop1">border color</div></li>
+              <li><div class="prop1">border-radius</div>: sets the radius of the border</li>
+              <li><div class="prop1"> border-image</div>: allows to set an image as a border</li>
+            </ul>
+            <p></p>
+
+          </article>
+        </section>
+       
+      </div>  
+
+    </main>
+  </body>
+</html>

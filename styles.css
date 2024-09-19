@@ -1,0 +1,119 @@
+body {
+    padding: 15px;
+    background-color: rgb(2, 3, 20);
+    color: rgb(244, 244, 245);
+    font-size: large;
+    font-family:  Georgia;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    line-height: 24px;
+}
+#Header {
+    font-size: x-large;
+    color: rgb(2, 3, 20);
+    margin-top: 0px;
+    padding-top: 20px;
+    font-weight: 900;
+} 
+#nav-hr {
+    border: 0;
+    border-bottom: 0.5px solid black;
+    margin-top: 20px;
+    box-sizing: content-box;
+    height: 0;
+}
+#navbar #ul {
+    list-style-type: none;
+    background-color: rgb(69, 194, 201);
+    border-radius: 5px;
+}
+#navbar a {
+    text-decoration: none;
+    color: rgb(2, 3, 20);
+    display: flex;
+    align-items: center;
+    left: 0px;
+}
+#navbar {
+    width: 280px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+h1 {
+    font-size: 38px;
+    color: rgba(9, 218, 229, 0.894);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+h2 {
+    color: rgba(9, 218, 229, 0.894);
+}
+main {
+    display: flex; 
+    max-width: 95%;
+}
+.container {
+    margin-left: 35%;
+    margin-top: 80px;
+}
+section ul li {
+    display: flex;
+}
+.selector {
+    padding: 2px;
+    margin: -2px 5px 15px 0;
+    border-radius: 5px;
+}
+.props {
+    padding: 20px;
+}
+.prop1 {
+    border: 1px solid grey;
+    margin: 0 5px 30px 5px;
+    border-radius: 5px;
+    padding: 2px;
+}
+.prop1{
+    display: inline !important;
+}
+.code {
+    background-color: rgb(0, 0, 0);
+    color: rgb(155, 144, 144);
+    padding: 16px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.value {
+    margin: -2px 5px 32px 0;
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid grey;
+}
+hr {
+    border: 0;
+    border-bottom: 1px solid #d3dce665;
+    margin-top: 20px;
+    box-sizing: content-box;
+    height: 0;
+}
+ul#special_ul{
+    display: block;
+}
+ul#special_ul li{
+    display: list-item;
+    list-style-type: disc;
+    
+}
+ul#special_ul div{
+    display: inline;
+}
+.note {
+    border: 1px solid grey;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+  
